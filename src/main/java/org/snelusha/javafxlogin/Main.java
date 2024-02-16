@@ -13,17 +13,11 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
-        Scene scene = new Scene(loader.load(), 320, 240);
+        Scene scene = new Scene(loader.load());
         stage.setTitle("Login");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-//        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("login.fxml")));
-//        Scene scene = new Scene(root);
-//        stage.setTitle("JavaFX Login");
-//        stage.setScene(scene);
-//        stage.setResizable(false);
-//        stage.show();
     }
 
     public static void main(String[] args) {
